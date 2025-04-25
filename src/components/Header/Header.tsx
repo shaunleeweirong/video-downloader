@@ -22,16 +22,6 @@ const Header = ({ onMenuClick, isOpen, downloaders }: HeaderProps) => {
         <Link href='/' className={styles["navbar-logo"]}>
           <Image src="/logo.png" alt="Logo Image" width={150} height={30} />
         </Link>
-        <nav>
-          <NavMenu name="Downloaders">
-              <div className={styles['navmenu-links']}>
-                {downloaders.map(downloader => (<div key={downloader.name} className={styles['navmenu-link']}>
-                  {<DownloaderLink {...downloader} /> }
-                  </div>
-                  ))}
-              </div>
-          </NavMenu>
-        </nav>
         <div onClick={onMenuClick} className={styles["navbar-icon"]}>
           <span
             className={cn(styles["mobile-icon"], {
