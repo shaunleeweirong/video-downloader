@@ -20,7 +20,7 @@ const Header = ({ onMenuClick, isOpen, downloaders }: HeaderProps) => {
     <header className={styles.navbar}>
       <Container className={styles["navbar-wrapper"]}>
         <Link href='/' className={styles["navbar-logo"]}>
-          <Image src="/logo.png" alt="Logo Image" width={150} height={30} />
+          <Image src="/logo.png" alt="Logo Image" width={390} height={78} />
         </Link>
         <div onClick={onMenuClick} className={styles["navbar-icon"]}>
           <span

@@ -18,6 +18,9 @@
 
 .navbar-logo {
   flex-shrink: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .navbar nav {
@@ -123,5 +126,11 @@
 
   .navbar-icon {
     display: none;
+  }
+
+  .navbar-logo {
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
   }
 }

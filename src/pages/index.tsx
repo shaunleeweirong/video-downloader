@@ -25,6 +25,7 @@ const socials = [
   { icon: <FaTwitter />, text: "Twitter" },
   { icon: <FaLinkedin />, text: "LinkedIn" },
   { icon: <FaInstagram />, text: "Instagram" },
+  { icon: <Image src="/tiktok.png" alt="TikTok" width={32} height={32} />, text: "TikTok" },
 ];
 
 const features: Array<{ title: string; description: string }> = [
@@ -36,7 +37,7 @@ const features: Array<{ title: string; description: string }> = [
   {
     title: "Security and data protection",
     description:
-      "SaveVideo will not save your video data, user data or any personal information on it's servers",
+      "TheB2BHouse will not save your video data, user data or any personal information on its servers",
   },
   {
     title: "Accesible for free",

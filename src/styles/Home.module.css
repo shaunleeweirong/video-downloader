@@ -197,10 +197,12 @@
     line-height: 1;
   }
 
-  .social-icon {
-    width: 20%;
+  .social-icons {
+    flex-wrap: nowrap;
   }
-
+  .social-icon {
+    width: 16.66%;
+  }
 }
 
 @media (min-width: 1526px) {
