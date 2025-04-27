@@ -21,8 +21,9 @@ const VideoDownload = ({ videoData }: VideoDownloadProps) => {
     setDownloadError(null);
     
     try {
-      // Use standard fetch to get the video data as a blob
-      const response = await fetch(currentFormat.url);
+      // Use backend API to proxy the video download and avoid CORS issues
+      const apiUrl = `/api/downloads?url=${encodeURIComponent(currentFormat.url)}&ext=${currentFormat.ext}`;
+      const response = await fetch(apiUrl);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

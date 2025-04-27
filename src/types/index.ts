@@ -4,6 +4,9 @@ export interface ExtractedVideo {
     formats: Array<VideoProp>;
     thumbnail?: string;
     origin_url?: string;
+    duration?: string | number;
+    author?: string;
+    uploader?: string;
 }
 
 export interface VideoProp {

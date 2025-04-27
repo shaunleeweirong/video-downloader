@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
     "@fontsource/open-sans": "^5.0.3",
@@ -28,13 +29,20 @@
     "ruhend-scraper": "^9.0.1",
     "video.js": "^8.0.4",
     "winston": "^3.8.2",
+    "youtube-dl-exec": "^3.0.20",
     "ytdl-core": "^4.11.4"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/lodash": "^4.14.191",
     "@types/node": "^18.15.9",
     "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.2",
     "typescript": "^5.0.2"
+  },
+  "youtube-dl-exec": {
+    "binary": "yt-dlp"
   }
 }
