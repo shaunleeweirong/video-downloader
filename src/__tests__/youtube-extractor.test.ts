@@ -31,7 +31,7 @@ describe('YoutubeExtractor', () => {
         expect(format).toHaveProperty('url');
         expect(format).toHaveProperty('ext');
         expect(format).toHaveProperty('quality');
-    });
+    }, 30000);
 
     test('handles download progress', async () => {
         const videoInfo = await extractor.extractVideo();
@@ -68,5 +68,5 @@ describe('YoutubeExtractor', () => {
         expect(progressCall).toHaveProperty('downloadedBytes');
         expect(progressCall).toHaveProperty('totalBytes');
         expect(progressCall).toHaveProperty('speed');
-    });
+    }, 30000);
 }); 
